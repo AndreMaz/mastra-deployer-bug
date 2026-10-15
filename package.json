@@ -1,0 +1,10 @@
+{
+  "name": "mastra-deployer-shared-chunk-repro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@12.3.4",
+  "scripts": {
+    "build:agent": "pnpm -F repro-agent build"
+  }
+}

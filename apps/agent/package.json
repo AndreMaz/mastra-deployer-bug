@@ -1,0 +1,19 @@
+{
+  "name": "repro-agent",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "mastra build --debug"
+  },
+  "dependencies": {
+    "@mastra/core": "1.77.0",
+    "repro-core": "workspace:*",
+    "zod": "4.6.4"
+  },
+  "devDependencies": {
+    "@mastra/deployer": "1.77.0",
+    "mastra": "1.29.0",
+    "typescript": "5.9.3"
+  }
+}

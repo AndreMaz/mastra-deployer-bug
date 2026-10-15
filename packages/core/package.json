@@ -1,0 +1,13 @@
+{
+  "name": "repro-core",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./server": "./src/server.ts",
+    "./roles": "./src/roles.ts"
+  },
+  "dependencies": {
+    "repro-leaf": "workspace:*"
+  }
+}
