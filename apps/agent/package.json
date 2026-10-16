@@ -9,6 +9,7 @@
   "dependencies": {
     "@mastra/core": "1.77.0",
     "repro-core": "workspace:*",
+    "repro-leaf": "workspace:*",
     "zod": "4.6.4"
   },
   "devDependencies": {
