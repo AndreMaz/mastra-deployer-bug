@@ -122,8 +122,8 @@ importers:
         version: 4.6.4
     devDependencies:
       '@mastra/deployer':
-        specifier: 1.77.0
-        version: 1.77.0(@hono/node-server@1.19.17(hono@4.13.13))(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(supports-color@7.2.0)(typescript@5.9.3)(zod@4.6.4)
+        specifier: 1.78.0-alpha.5
+        version: 1.78.0-alpha.5(@hono/node-server@1.19.17(hono@4.13.13))(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(supports-color@7.2.0)(typescript@5.9.3)(zod@4.6.4)
       mastra:
         specifier: 1.29.0
         version: 1.29.0(@hono/node-server@1.19.17(hono@4.13.13))(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(supports-color@7.2.0)(typescript@5.9.3)(zod@4.6.4)
@@ -546,6 +546,12 @@ packages:
     peerDependencies:
       '@mastra/core': '>=1.58.0-0 <2.0.0-0'
 
+  '@mastra/deployer@1.78.0-alpha.5':
+    resolution: {integrity: sha512-RY5rOe0fKE5/qip9rqiVpzJmpipZHLC/U1X6Vi3+6iTTnXA0N/jo7ocf3DS4/JKd3qC2gl0TRlhiWRMvRJNL7w==}
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@mastra/core': '>=1.58.0-0 <2.0.0-0'
+
   '@mastra/loggers@1.3.7':
     resolution: {integrity: sha512-PADgZTwf6nInd/HBcYXlHclhiBw9gLp3oR1TLKkgF5BNNbzVwbvlBZlqxOQuIatvXCWyIPS22cUzgZBmewiJHg==}
     engines: {node: '>=22.13.0'}
@@ -560,6 +566,13 @@ packages:
 
   '@mastra/server@1.77.0':
     resolution: {integrity: sha512-6R4I44aShpAclJGwf/ZKnNkEI+c/+nYPvOfLow4jMIHHe8Str+NQKy3Zdsvp9ogGfoUnEF5VD3qv1Z+iFJFYOg==}
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      '@mastra/core': '>=1.58.0-0 <2.0.0-0'
+      zod: ^3.25.0 || ^4.0.0
+
+  '@mastra/server@1.78.0-alpha.5':
+    resolution: {integrity: sha512-x4TEXs/NaRYEUilITEpZ3FWpVeMNid8ooQCCrhZ0QbqyP9DgaPki4S8UFbWvdDhvC5sOQLKQupym6DagJMyr5w==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.58.0-0 <2.0.0-0'
@@ -2452,6 +2465,46 @@ snapshots:
       - utf-8-validate
       - zod
 
+  '@mastra/deployer@1.78.0-alpha.5(@hono/node-server@1.19.17(hono@4.13.13))(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(supports-color@7.2.0)(typescript@5.9.3)(zod@4.6.4)':
+    dependencies:
+      '@babel/core': 8.0.7
+      '@babel/preset-typescript': 8.0.7(@babel/core@8.0.7)
+      '@babel/traverse': 8.0.7
+      '@hono/node-ws': 1.3.1(@hono/node-server@1.19.17(hono@4.13.13))(hono@4.13.13)
+      '@mastra/core': 1.77.0(supports-color@7.2.0)(zod@4.6.4)
+      '@mastra/server': 1.78.0-alpha.5(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(zod@4.6.4)
+      '@optimize-lodash/rollup-plugin': 5.1.0(rollup@4.64.6)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.6)
+      '@rollup/plugin-commonjs': 29.0.2(rollup@4.64.6)
+      '@rollup/plugin-esm-shim': 0.1.8(rollup@4.64.6)
+      '@rollup/plugin-json': 6.1.0(rollup@4.64.6)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.6)
+      '@rollup/plugin-virtual': 3.0.2(rollup@4.64.6)
+      '@sindresorhus/slugify': 2.2.1
+      empathic: 2.1.0
+      esbuild: 0.28.2
+      find-up-simple: 1.0.1
+      find-workspaces: 0.3.1
+      fs-extra: 11.4.1
+      gray-matter: 4.0.3
+      hono: 4.13.13
+      local-pkg: 1.2.1
+      resolve.exports: 2.0.4
+      rollup: 4.64.6
+      rollup-plugin-esbuild: 6.2.1(esbuild@0.28.2)(rollup@4.64.6)(supports-color@7.2.0)
+      strip-json-comments: 5.0.3
+      tinyglobby: 0.2.17
+      typescript-paths: 1.5.2(typescript@5.9.3)
+      ws: 8.22.0
+      yaml: 2.9.1
+    transitivePeerDependencies:
+      - '@hono/node-server'
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+
   '@mastra/loggers@1.3.7(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))':
     dependencies:
       '@mastra/core': 1.77.0(supports-color@7.2.0)(zod@4.6.4)
@@ -2465,6 +2518,12 @@ snapshots:
       zod-from-json-schema: 0.5.6
 
   '@mastra/server@1.77.0(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(zod@4.6.4)':
+    dependencies:
+      '@mastra/core': 1.77.0(supports-color@7.2.0)(zod@4.6.4)
+      hono: 4.13.13
+      zod: 4.6.4
+
+  '@mastra/server@1.78.0-alpha.5(@mastra/core@1.77.0(supports-color@7.2.0)(zod@4.6.4))(zod@4.6.4)':
     dependencies:
       '@mastra/core': 1.77.0(supports-color@7.2.0)(zod@4.6.4)
       hono: 4.13.13

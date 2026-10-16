@@ -12,7 +12,7 @@
     "zod": "4.6.4"
   },
   "devDependencies": {
-    "@mastra/deployer": "1.77.0",
+    "@mastra/deployer": "1.78.0-alpha.5",
     "mastra": "1.29.0",
     "typescript": "5.9.3"
   }
